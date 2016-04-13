@@ -1,3 +1,3 @@
 #!/bin/bash
 # temporary - for testing
-echo 'before install ran'
+echo 'before_install.sh ran'
