@@ -1,3 +1,3 @@
 #!/bin/bash
 # temporary - for testing
-echo 'before_install.sh ran'
+cp public "/var/www/$DEPLOYMENT_ID"
