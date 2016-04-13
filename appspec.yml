@@ -1,5 +1,8 @@
 version: 0.0
 os: linux
+files:
+  - source: public
+    destination: /var/www/$DEPLOYMENT_ID
 hooks:
    BeforeInstall:
      - location: scripts/before_install.sh
