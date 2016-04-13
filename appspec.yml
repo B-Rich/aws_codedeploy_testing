@@ -1,0 +1,9 @@
+version: 0.0
+os: operating-system-name
+files:
+  - source: public
+    destination: /var/www/$DEPLOYMENT_ID
+hooks:
+   AfterInstall:
+     - location: scripts/after_install.sh
+       timeout: 60
