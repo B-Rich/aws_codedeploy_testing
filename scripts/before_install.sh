@@ -1,3 +1,3 @@
 #!/bin/bash
-# temporary - for testing
-cp public "/var/www/$DEPLOYMENT_ID"
+service apache2 stop
+rm -rf /var/www/html
