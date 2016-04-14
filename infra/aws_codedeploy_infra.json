@@ -1,7 +1,7 @@
 {
   "AWSTemplateFormatVersion" : "2010-09-09",
 
-  "Description" : "Create a VPC containing two subnets and an auto scaling group containing instances with Internet access.",
+  "Description" : "Create a VPC containing two subnets and an Auto Scaling Group running Web Servers.",
 
   "Parameters" : {
 
@@ -195,7 +195,7 @@
         "Subnets" : [ { "Ref" : "PublicSubnetA" }, { "Ref" : "PublicSubnetB" } ],
         "SecurityGroups" : [ { "Ref" : "webServerELBSecurityGroup" } ],
         "HealthCheck" : {
-          "Target" : "HTTP:80/index.html",
+          "Target" : "TCP:80",
           "HealthyThreshold" : "3",
           "UnhealthyThreshold" : "5",
           "Interval" : "30",
